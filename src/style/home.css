@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&family=Oswald:wght@200&family=Poppins:wght@300;500;600;700&family=Roboto:wght@100;300&display=swap');
+
+:root {
+  --fontOswald: 'Oswald', sans-serif;
+  ---font2: 'Noto Sans', sans-serif;
+
+
+}
+
+.container_home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(50, 5, 47);
+  background: linear-gradient(180deg, rgba(50, 5, 47, 1) 0%, rgba(0, 0, 6, 1) 66%);
+}
+
+.container_home div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container_home div img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: -10px 10px 100px 20px rgb(69, 14, 75);
+}
+
+img.vert-move {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+img.vert-move {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.container_home div p {
+  margin: 20px 0;
+  font: 1000 4.5rem var(--fontOswald);
+  padding-left: 20px;
+  color: rgb(151, 23, 130);
+
+}
+
+@media (max-width:450px) {
+
+  .container_home div img {
+    max-width: 350px;
+  }
+}

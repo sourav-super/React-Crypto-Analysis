@@ -1,0 +1,57 @@
+.exchange {
+    background: rgb(50, 5, 47);
+    background: linear-gradient(180deg, rgba(50, 5, 47, 1) 0%, rgba(0, 0, 6, 1) 66%);
+
+}
+
+.exchangemain {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 10px solid rgb(50, 5, 47);
+
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(231, 227, 226);
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 5px 5px 10px rgb(139, 134, 134);
+    transition: all 0.3S;
+
+
+}
+
+.card:hover {
+
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.card p,
+h1 {
+    color: black;
+    font: 900 1rem white;
+    /* padding: 5px; */
+}
+
+.card img {
+    width: 50%px;
+    height: 50%px;
+    align-self: center;
+}
